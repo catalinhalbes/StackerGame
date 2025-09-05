@@ -3,7 +3,7 @@
 A simple game with modern Tetris mechanics such as:
 
 - Hold;
-- Super Rotation System (SRS);
+- Super Rotation System+ (SRS+, default Tetr.io movement, guideline SRS is also available in code);
 - Customizable movement;
 
 The game configuration can be edited in the file `settings.toml`

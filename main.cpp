@@ -96,9 +96,6 @@ int main(int argc, char *argv[])
         // delete all resources as loaded using the resource manager
         // ---------------------------------------------------------
         ResourceManager::Clear();
-
-        glfwTerminate();
-        return 0;
     }
     catch (const toml::parse_error& err)
     {
@@ -109,6 +106,9 @@ int main(int argc, char *argv[])
         std::cerr << "Error:\n" << err.what() << "\n";
         return 1;
     }
+
+    glfwTerminate();
+    return 0;
 }
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode)

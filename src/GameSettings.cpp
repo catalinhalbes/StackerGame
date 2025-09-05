@@ -53,7 +53,7 @@ int GameSettings::ConvertToGlfwScancode(const std::string& key) {
         {"left_shift", GLFW_KEY_LEFT_SHIFT}, 
         {"left_ctrl", GLFW_KEY_LEFT_CONTROL},
         {"right_shift", GLFW_KEY_RIGHT_SHIFT}, 
-        {"rigth_ctrl", GLFW_KEY_RIGHT_CONTROL},
+        {"right_ctrl", GLFW_KEY_RIGHT_CONTROL},
         {"left_alt", GLFW_KEY_LEFT_ALT}, 
         {"right_alt", GLFW_KEY_RIGHT_ALT}, 
         {"tab", GLFW_KEY_TAB},

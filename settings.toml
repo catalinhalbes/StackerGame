@@ -1,12 +1,12 @@
 [Keybinds]
 # press 'esc' to close the game
-move_left               = "a"
-move_right              = "d"
-soft_drop               = "w"
-hard_drop               = "s"
-rotate_clockwise        = "arrow_right"
-rotate_anticlockwise    = "arrow_left"
-rotate_180              = "arrow_up"
+move_left               = "arrow_left"
+move_right              = "arrow_right"
+soft_drop               = "arrow_down"
+hard_drop               = "space"
+rotate_clockwise        = "arrow_up"
+rotate_anticlockwise    = "right_ctrl"
+rotate_180              = "a"
 hold                    = "left_shift"
 restart                 = "r"
 
@@ -15,9 +15,9 @@ move_up                 = "t"
 move_down               = "g"
 
 [Movement]
-DAS         = 0.083     # (seconds) Delayed Auto Shift - The time required to hold down a movement key for the piece to start moving automatically
-ARR         = 0.00      # (seconds) Auto Repeat Rate   - The time interval between each subsequent automatic move after DAS activation
-SDR         = 0.00      # (seconds) Soft Drop Rate     - Similar to ARR, but whitout DAS, controlls the fall speed when holding soft drop
+DAS         = 0.167     # (seconds) Delayed Auto Shift - The time required to hold down a movement key for the piece to start moving automatically
+ARR         = 0.033      # (seconds) Auto Repeat Rate   - The time interval between each subsequent automatic move after DAS activation
+SDR         = 0.016      # (seconds) Soft Drop Rate     - Similar to ARR, but whitout DAS, controlls the fall speed when holding soft drop
 DAS_cancel  = true      # If enabled changing the DAS direction will reset the DAS counter and prevent it from charging. 
                         # If disabled allows you to hold both lateral movement keys pressed at the same time to keep the DAS charged. The last input takes precedence.
                         # Basically, when enabled, trades off some potential speed gains for making the board a bit less slippery.
